@@ -332,3 +332,9 @@ textarea {
   font: 0.78rem;
   margin: 1.25rem 0 1.25rem 0;
 }
+
+@media only screen and (max-width: 1000px) {
+  .cc2 {
+    width: 90%;
+  }
+}
