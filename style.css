@@ -317,7 +317,7 @@ textarea {
 }
 .submit-button:hover {
   background-color: #f16755;
-  color: hsl(25, 97%, 53%);
+  color: black;
 }
 
 .result-container {
