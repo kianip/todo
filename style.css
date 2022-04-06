@@ -29,7 +29,7 @@ body {
 .container {
   display: table;
   max-width: 550px;
-  width: 100%;
+  width: 90%;
   margin: 5rem auto 7rem auto;
   background-color: #fff;
   border-top-left-radius: 5px;
