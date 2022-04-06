@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Bungee+Shade&family=Karla:wght@300&family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#hh {
+  margin: auto;
+  font-family: "Bungee Shade", cursive;
+  font-size: 50px;
+  line-height: 3.5rem;
+  text-align: center;
+  background: #f1432c;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #faf6f4;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  display: table;
+  max-width: 550px;
+  width: 100%;
+  margin: 5rem auto 7rem auto;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.cc {
+  max-width: 60%;
+  font-size: 1.5rem;
+  color: #45282a;
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  margin: 5rem auto 0 auto;
+}
+
+.cc2 {
+  background-color: #ffe8dc;
+  font-size: 1.5rem;
+  max-width: 40%;
+  color: #45282a;
+  font-family: "Acme", sans-serif;
+  text-align: center;
+  margin: 5rem auto 0 auto;
+  border-radius: 3rem;
+  padding: 2rem;
+}
+
+.cc2 h1 {
+  font-size: 2rem;
+}
+.reset {
+  margin: 1rem auto 0 auto;
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 50px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+}
+
+.header {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #663939;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 350px;
+  max-height: 350px;
+  background: #ffe8dc;
+  overflow: auto;
+}
+
+.dateAndClear {
+  color: white;
+  background-color: #1c232d;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.dateAndClear #date {
+  flex: 1;
+}
+
+.content ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.content li {
+  padding: 10px;
+  display: flex;
+  border-bottom: 1px solid black;
+  transition: all 0.5s ease-in-out;
+}
+
+.content li:hover {
+  background: #f16755;
+}
+
+.co {
+  flex: 0.1;
+  line-height: 1.2;
+}
+
+.content li p {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  color: #45282a;
+}
+
+.checkedLine:not(.fa-circle) {
+  text-decoration: line-through;
+  color: #a8b4c5;
+  transition: all 0.5s ease-in-out;
+}
+
+.checkedLine:not(.fa-check-circle) {
+  text-decoration: line-through;
+  color: #a8b4c5;
+  transition: all 0.5s ease-in-out;
+}
+
+.addToDo {
+  background: #1c232d;
+  border-top: 1px solid #45282a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.addToDo input {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  background: #1c232d;
+  margin: 0 0 0 10px;
+  width: 100%;
+  font-size: 15px;
+  border: 0;
+}
+
+.addToDo input:focus {
+  outline: none;
+}
+
+.fa-check-circle {
+  display: flex;
+  justify-content: center;
+  color: #49d668;
+}
+.fa-trash-alt {
+  color: #45282a;
+  transition: color 0.2s ease-in-out;
+}
+.fa-trash-alt:hover {
+  color: white;
+}
+
+.fa-trash-alt:hover,
+.fa-check-circle:hover,
+.fa-circle:hover,
+.fa-sync-alt:hover {
+  cursor: pointer;
+  text-shadow: 0 0 3px #4e4a4a;
+}
+
+.fa-circle {
+  display: flex;
+  justify-content: center;
+  color: #45282a;
+  transition: color 0.2s ease-in-out;
+}
+
+.fa-circle:hover {
+  color: #49d668;
+}
+
+.content li {
+  transition: background 0.2s ease-in-out;
+}
+
+.fa-plus-circle {
+  color: white;
+}
+
+.homepage-header {
+  background-color: #ffe8dc;
+  padding: 5rem 0 5rem 0;
+}
+
+/* RATING COMPONENT */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+button {
+  background-color: transparent;
+  border: transparent;
+}
+
+.rating-component-box {
+  font-family: "Overpass", sans-serif;
+  max-width: 25rem;
+  background-color: #ffe8dc;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+  margin: 3rem auto 3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 50px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+}
+
+.rating-component-box .star-img {
+  margin: 1.25rem 0 1.25rem 0;
+}
+
+.rating-component-box h2 {
+  margin: 1.25rem 0 1.25rem 0;
+  color: #45282a;
+}
+
+.rating-component-box p {
+  margin: 1.25rem 0 1.25rem 0;
+  color: black;
+}
+
+.rating-component-box .survey-button {
+  margin: 1.25rem 0 1.25rem 0;
+}
+
+.rating-component-box .submit-button {
+  margin: 1.25rem 0 1.25rem 0;
+}
+
+.star-img img {
+  padding: 1.25rem;
+  background-color: #1c232d;
+  border-radius: 50%;
+}
+
+.survey-button {
+  padding: 1.5rem;
+  background-color: #45282a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+
+.survey-buttons {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.survey-button:hover {
+  background-color: #8b6f71;
+}
+.survey-button[area-selection="true"] {
+  background-color: hsl(25, 97%, 53%);
+  font-weight: 700;
+}
+
+textarea {
+  font-family: "Overpass", sans-serif;
+  background-color: #e5b499;
+  margin: 1.25rem 0 1.25rem 0;
+  width: 100%;
+  height: 5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 50px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  padding: 10px;
+}
+
+.submit-button {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1.5rem;
+  background-color: #1c232d;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 0.125em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.submit-button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+  font-weight: 700;
+}
+
+.result-container {
+  padding-inline: 2.5em;
+  text-align: center;
+}
+.result-container img {
+  margin-inline: auto;
+  max-width: 50%;
+}
+.result-container p {
+  font: 0.78rem;
+  margin: 1.25rem 0 1.25rem 0;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link res="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web" />
+    <script src="https://kit.fontawesome.com/653b31a42d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./iconmonstr-product-5.svg">
+    <title>To Do App</title>
+</head>
+
+<body>
+    <main>
+        <div class="main-content">
+            <div class="homepage-header">
+                <!-- Welcome text -->
+                <h1 id="hh" data-shadow='dang!'>Welcome to your to do list</h1>
+                <p class="cc">With this application, You can write, organise, and reprioritize your chores more
+                    efficiently.
+                    <br />
+                    You can add tasks , mark them as completed, delete specific tasks or delete everything all together.
+                    <br /> <br /> We use cookies so as long as you don't clear your browsing data, the data you entered
+                    will
+                    be saved!
+                </p>
+            </div>
+            <!-- Wrapper pour le to do list -->
+            <div class="container">
+                <!-- Le header du to do list-->
+                <div class="box">
+                    <div class="header">Enter your tasks for today</div>
+                    <div class="content">
+                        <!-- Section pour l'affichage de la date et le boutton pour supprimer le contenu -->
+                        <div class="dateAndClear">
+                            <div id="date"></div>
+                            <div class="clear">
+                                <i class="fas fa-sync-alt" onClick="UI.clearToDo()"> </i>
+                            </div>
+                        </div>
+                        <!-- La section ou les taches vont etre ajouter dans la liste-->
+                        <ul id="list"></ul>
+                    </div>
+                    <div class="addToDo">
+                        <!-- Section avec le input pour ajouter les taches ainsi que l'icone du + -->
+                        <i class="fas fa-plus-circle co"></i>
+                        <input type="text" id="input" placeholder="Add new item" />
+                    </div>
+                </div>
+            </div>
+            <!-- la partie rating component -->
+            <div class="rating-component">
+                <div class="cc2">
+                    <h1>Do you have a second?</h1>
+                    <p class="reset">We would love to hear your feedback on how we could improve our application.</p>
+                </div>
+            </div>
+            <!-- container -->
+            <div class="rating-component-box" id="rating-survey">
+                <div class="star-img">
+                    <img src="images/icon-star.svg">
+                </div>
+                <h2>How did we do?</h2>
+                <p>Please let us know how we did with our application. All feedback is appreciated to help us
+                    improve our offering!</p>
+                <!-- bouttons chiffre -->
+                <div class="survey-buttons">
+                    <button class="survey-button" id="1" area-selection="false" role="button">1</button>
+                    <button class="survey-button" id="2" area-selection="false" role="button">2</button>
+                    <button class="survey-button" id="3" area-selection="false" role="button">3</button>
+                    <button class="survey-button" id="4" area-selection="false" role="button">4</button>
+                    <button class="survey-button" id="5" area-selection="false" role="button">5</button>
+                </div>
+                <!--texte feedback -->
+                <div class="text-rating"><textarea id="story"
+                        placeholder="Do you have any suggestions or comments?"></textarea></div>
+                <button class="submit-button" id="submit">Submit</button>
+            </div>
+            <!-- deuxieme partie component -->
+            <div hidden class="rating-component-box result-container" id="result-box">
+                <p class="rating-result"><span id="chosen-rating"></span></p>
+                <img src="images/illustration-thank-you.svg">
+                <h2>Thank you!</h2>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
